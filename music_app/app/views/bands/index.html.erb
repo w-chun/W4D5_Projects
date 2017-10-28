@@ -1,0 +1,7 @@
+
+<h2>Bands</h2>
+  <%= button_to "Create Band", new_band_url, method: :get %>
+
+<ul class="band"><% @bands.each do |band|  %>
+  <li><%= band.name %><a href= "<%= band_url(band.id) %>">More Info</a></li>
+<% end %> </ul>
